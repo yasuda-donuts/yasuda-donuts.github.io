@@ -11,11 +11,17 @@
       value="Say hello"
       onClick="showAndroidToast('Hello Android!')"
     />
+    <br />
+    <div id="output"></div>
 
     <script type="text/javascript">
       function showAndroidToast(toast) {
         Android.showToast(toast);
         console.log(toast);
+      }
+      function onButtonClick(text) {
+        target = document.getElementById("output");
+        target.innerHTML = text;
       }
     </script>
   </body>
