@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WebViewテスト</title>
+  </head>
+  <body>
+    Android TEST
+    <input
+      type="button"
+      value="Say hello"
+      onClick="showAndroidToast('Hello Android!')"
+    />
+
+    <script type="text/javascript">
+      function showAndroidToast(toast) {
+        Android.showToast(toast);
+        console.log(toast);
+      }
+    </script>
+  </body>
+</html>
